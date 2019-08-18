@@ -10,6 +10,11 @@ Frontend application is written in [MEAN-Website-Frontend](https://github.com/Go
     - [Environment Setup](#env)
     - [Database Setup](#db)
     - [Project Setup](#project)
+- [Testing the API](#test)
+    - [Insert API](#insert)
+    - [Get API](#get)
+    - [Update API](#update)
+    - [Delete API](#delete)
 - [Reference](#ref)
 - [License](#license)
 
@@ -64,8 +69,9 @@ npm install --save bluebird mongoose mongoose-paginate nodemon
 
 #### <a name="db"></a>Database Setup
 
-Download and isntall MogoDB.
+Download and install MogoDB.
 Make sure that the database is running at `127.0.0.1:27017`
+DB name `todoapp` should be available
 
 
 #### <a name="project"></a>Project Setup
@@ -78,6 +84,38 @@ Run `npm install -g nodemon` to install Nodemon Globally.
 
 Run `npm start` to run the NodeJS Server.
 
+## <a name="test"></a>Testing the API 
+
+#### <a name="insert"></a>Insert API
+This is a POST call
+
+URL - `http://localhost:3000/api/todos`
+
+Call Parameters
+- title
+- description
+- status
+
+URL with parameters - `http://localhost:3000/api/todos?title=Test1&description=Testing the insert api&status=pending`
+
+#### <a name="get"></a>Get API
+This is a Get call
+
+URL - `http://localhost:3000/api/todos`
+
+#### <a name="update"></a>Update API
+This is a Put call
+
+URL - `http://localhost:3000/api/todos`
+
+URL with parameters - `http://localhost:3000/api/todos?title=Test1&description=Testing the insert api&status=pending&_id=5d5926c8356670fb053ee5ea`
+
+#### <a name="delete"></a>Delete API
+This is a Delete call
+
+URL - `http://localhost:3000/api/todos`
+
+URL with parameters - `http://localhost:3000/api/todos/5d5926c8356670fb053ee5ea`
 
 ## <a name="ref"></a>Reference
 This is learning project inspired from
