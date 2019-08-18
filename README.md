@@ -1,9 +1,22 @@
 # MEAN-Website-Backend
-Backend application written using MEAN stack.
+Experimental Backend application written using MEAN stack.
 
-Frontend application is written in MEAN-Website-Frontend repo.
+Frontend application is written in [MEAN-Website-Frontend](https://github.com/GoyalYatin/MEAN-Website-Frontend) repo.
 
-# Architecture
+## Index
+- [Todo API](#todo)
+- [Architecture](#arch)
+- [Setup](#setup)
+    - [Environment Setup](#env)
+    - [Database Setup](#db)
+    - [Project Setup](#project)
+- [Reference](#ref)
+- [License](#license)
+
+## <a name="todo"></a>Todo Api
+A simple todo API made with NodeJS, ExpressJS and MongoDB. Can be used as a back-end for learning front-end technologies without making a standalone API for that purpose.
+
+## <a name="arch"></a>Architecture
 ![Highlevel](doc/highlevel.png)
 
 Above picture describes how the applications are positioned. This is high level flow.
@@ -15,7 +28,8 @@ Testing is done manually using postman for backend application and manually via 
 This picture describes the sequence of the calls, this is low level design for this complete application, this repo only consist of backend side, along with mongoDb setup scipts. 
 
 
-# Lets setup the environment
+## <a name="setup"></a>Setup
+#### <a name="env"></a>Environment Setup
 - First go here — https://nodejs.org/en/download/ and Install NodeJS.
 - Download and Install MongoDB — https://www.mongodb.com/download-center#community
 - Download a good Text Editor or IDE. I Personally prefer Visual Studio Code — https://code.visualstudio.com/download
@@ -48,25 +62,13 @@ At first let’s install all the necessary packages we will be using throughout 
 npm install --save bluebird mongoose mongoose-paginate nodemon
 ````
 
-# Reference
-https://medium.com/netscape/mean-app-tutorial-with-angular-4-part-1-18691663ea96
-
-# todo-api
-A simple todo API made with NodeJS, ExpressJS and MongoDB. Can be used as a back-end for learning front-end technologies without making a standalone API for that purpose.
-
-
-## Download Instruction
-
-Run `git clone https://github.com/nomanHasan/todo-api` to download the project to your computer.
-
-
-## Database Setup
+#### <a name="db"></a>Database Setup
 
 Download and isntall MogoDB.
 Make sure that the database is running at `127.0.0.1:27017`
 
 
-## Project Setup
+#### <a name="project"></a>Project Setup
 
 Now run `cd todo-api` to go inside the directory
 
@@ -75,3 +77,11 @@ Run `npm install` to install all the dependencies.
 Run `npm install -g nodemon` to install Nodemon Globally.
 
 Run `npm start` to run the NodeJS Server.
+
+
+## <a name="ref"></a>Reference
+This is learning project inspired from
+https://medium.com/netscape/mean-app-tutorial-with-angular-4-part-1-18691663ea96
+
+## <a name="license"></a>License
+[MIT](LICENSE) License
