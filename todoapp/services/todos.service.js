@@ -1,4 +1,4 @@
-// Gettign the Newly created Mongoose Model we just created
+// Getting the Newly created Mongoose Model we just created
 
 var ToDo = require('../models/todo.model')
 
@@ -100,8 +100,8 @@ exports.deleteTodo = async function(id){
     // Delete the Todos
 
     try{
-        var deleted = await ToDo.remove({_id: id})
-        if(deleted.result.n === 0){
+        var deleted = await ToDo.deleteOne({_id: id})
+        if(deleted.n === 0){
             throw Error("Todo Could not be deleted")
         }
         return deleted
